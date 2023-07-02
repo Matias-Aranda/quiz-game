@@ -99,13 +99,13 @@ export default function Quiz(props){
     
     return(
         <div className="quiz">
-            <img src="./src/assets/yellow-blob.svg" className="game-yellow-blob"/>
+            <img src="/yellow-blob.svg" className="game-yellow-blob"/>
             {questions}
             <div>
                 {props.revealed && <h4 className="score">You scored {correctCount}/{questionsArr.length} correct answers</h4>}
                 {props.revealed && <button className="play-again-btn" onClick={props.playAgain}>Play again</button>}
             </div>
-            <img src="./src/assets/blue-blob.svg" className="game-blue-blob"/>
+            <img src="/blue-blob.svg" className="game-blue-blob"/>
         </div>
     )
 }
